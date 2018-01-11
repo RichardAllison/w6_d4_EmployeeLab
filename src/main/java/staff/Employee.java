@@ -11,4 +11,16 @@ public class Employee {
         this.ni = ni;
         this.salary = salary;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getNi() {
+        return this.ni;
+    }
+
+    public double getSalary() {
+        return this.salary;
+    }
 }

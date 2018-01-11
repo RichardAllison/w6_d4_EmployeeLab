@@ -10,12 +10,22 @@ public class EmployeeTest {
 
     @Before
     public void before() {
-        employee = new Employee("John", "PC323056C", 23000);
+        employee = new Employee("John", "AB000000T", 23000);
     }
 
     @Test
     public void hasName() {
         assertEquals("John", employee.getName());
+    }
+
+    @Test
+    public void hasNINO(){
+        assertEquals("AB000000T", employee.getNi());
+    }
+
+    @Test
+    public void hasSalary(){
+        assertEquals(23000, employee.getSalary());
     }
 
 }
