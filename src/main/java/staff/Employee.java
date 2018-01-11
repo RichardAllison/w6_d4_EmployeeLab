@@ -23,4 +23,20 @@ public class Employee {
     public double getSalary() {
         return this.salary;
     }
+
+    public void raiseSalary(double raise) {
+        this.salary += raise;
+    }
+
+    public double getBonus(){
+        return this.salary * 0.01;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setNi(String ni) {
+        this.ni = ni;
+    }
 }

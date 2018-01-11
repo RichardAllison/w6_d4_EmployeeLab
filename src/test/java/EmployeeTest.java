@@ -25,7 +25,30 @@ public class EmployeeTest {
 
     @Test
     public void hasSalary(){
-        assertEquals(23000, employee.getSalary());
+        assertEquals(23000, employee.getSalary(), 0.01);
+    }
+
+    @Test
+    public void canRaiseSalary(){
+        employee.raiseSalary(7000);
+        assertEquals(30000, employee.getSalary(), 0.01);
+    }
+
+    @Test
+    public void canGetBonus(){
+        assertEquals(230, employee.getBonus(), 0.01);
+    }
+
+    @Test
+    public void canChangeName(){
+        employee.setName("Joe");
+        assertEquals("Joe", employee.getName());
+    }
+
+    @Test
+    public void canChangeNi(){
+        employee.setNi("AB123456C");
+        assertEquals("AB123456C", employee.getNi());
     }
 
 }
